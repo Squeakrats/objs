@@ -22,8 +22,8 @@ console.log(skyscraper);
 ```javascript
 {
        v  : // <vertex position index in model vertices list>
-       vt : // <vertex texture coordinate index in model vertices list>
-       vn : // <vertex normal index in model vertices list>
+       vt : // <vertex texture coordinate index in model UVs list>
+       vn : // <vertex normal index in model normals list>
 }
 ```
 
@@ -58,6 +58,7 @@ for(let vertex of model.vertices)
   for(let i = 0; i < 3;i++)
     sum[i] += vertex[i]
 
+let c = model.vertices.length;
 sum[0] /= c;
 sum[1] /= c;
 sum[2] /= c;
