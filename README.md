@@ -52,7 +52,7 @@ console.log(skyscraper);
 
 ## Example (Average vertex)
 ```javascript
-let model = Objs.parseObj("test.obj");
+let model = Objs.parseObj(RawOBJString);
 let sum = [0, 0, 0]
 for(let vertex of model.vertices)
   for(let i = 0; i < 3;i++)
@@ -66,7 +66,7 @@ console.log(sum)
 
 ## Example (Iterate Over Faces And Print Vertex Positions)
 ```javascript
-let model = Objs.parseObj("test.obj");
+let model = Objs.parseObj(RawOBJString);
 let vertices = model.vertices;
 
 for(let face of model.faces) {
