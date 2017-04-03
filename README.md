@@ -5,7 +5,7 @@ Simple obj file loader written in Javascript. Useful for loading files via ajax 
 
 ### Ajax
 ```javascript
-Objs.loadObj("../test/skyscraper.obj")]).then((data)=> {
+Objs.loadObj("../test/skyscraper.obj").then((data)=> {
   // Do things with skyscraper
   console.log(skyscraper);
 })
