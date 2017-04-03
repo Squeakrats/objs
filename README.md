@@ -21,9 +21,9 @@ console.log(skyscraper);
 ## Vertex Format
 ```javascript
 {
-       v  : // <Vertex position index in model vertices list>
-       vt : // <Vertex texture coordinate index in model vertices list>
-       vn : // <Vertex normal index in model vertices list>
+       v  : // <vertex position index in model vertices list>
+       vt : // <vertex texture coordinate index in model vertices list>
+       vn : // <vertex normal index in model vertices list>
 }
 ```
 
