@@ -1,6 +1,6 @@
 # objs.js
 ## Description 
-Simple obj file loader written in Javascript. Useful for loading files via ajax or parsing pre-loaded text. 
+Simple obj file loader written in Javascript. Useful for loading files via ajax or parsing pre-loaded text. Should be compatible with every model [here]( http://people.sc.fsu.edu/~jburkardt/data/obj/obj.html). Please note that this library only supports a subset of the obj format. 
 ## Usage 
 
 ### Ajax
