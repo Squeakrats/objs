@@ -24,7 +24,7 @@ class Vertex3 {
 }
 
 /**
- * @class Structure for holding face face data. (order 3)
+ * @class Structure for holding face data. (order 3)
  * @param {Int} a First vertex
  * @param {Int} b Second vertex
  * @param {Int} c Third vertex
