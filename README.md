@@ -1,24 +1,40 @@
 # objs.js
-## Description 
+
+## Description
 Simple obj file loader written in Javascript. Useful for loading files via ajax or parsing pre-loaded text. Should be compatible with every model [here]( http://people.sc.fsu.edu/~jburkardt/data/obj/obj.html). Please note that this library only supports a subset of the obj format. 
+
+## Previewing
+To see if the library supports your model head over [here] and upload it. It will let you see a preview and probably save you some debugging time. 
+
 ## Usage 
 
 ### Ajax
 ```javascript
-Objs.loadObj("../test/skyscraper.obj").then((data)=> {
+Objs.loadObj("../test/skyscraper.obj").then((skyscraper)=> {
   // Do things with skyscraper
   console.log(skyscraper);
 })
 ```
 
 ### Text
+
+#### Raw String
 ```javascript
 let model = Objs.parseObj(RawOBJString);
 // Do things with skyscraper
-console.log(skyscraper);
+console.log(model);
 ```
 
-## Vertex Format
+#### [TFWGF Loader]( http://people.sc.fsu.edu/~jburkardt/data/obj/obj.html)
+```javascript
+let model = PreLoadedAssets["skyscraper.obj"]
+// Do things with skyscraper
+console.log(model);
+```
+
+## Data Structures
+
+### Vertex Format
 ```javascript
 {
        v  : // <vertex position index in model vertices list>
@@ -27,17 +43,17 @@ console.log(skyscraper);
 }
 ```
 
-## Face Format
+### Face Format
 ```javascript
 {
-       a  : // <first Vertex>
+       a  : // <first Vertex> * See above data structure. These are NOT the vertex positions
        b  : // <second Vertex>
        c  : // <third Vertex>
        mi : // <material Index>
 }
 ```
 
-## Model Format
+### Model Format
 ```javascript
 {
         vertices :  [v1, v2, v3, ... ], // where each element is an array [x, y, z]
@@ -49,8 +65,10 @@ console.log(skyscraper);
         mtllibs :  [filename1, filename2, ... ]
 }
 ```
+### Examples
+See examples folder for more specific examples
 
-## Example (Average vertex)
+### Example (Average vertex)
 ```javascript
 let model = Objs.parseObj(RawOBJString);
 let sum = [0, 0, 0]
@@ -65,7 +83,7 @@ sum[2] /= c;
 console.log(sum)
 ```
 
-## Example (Iterate Over Faces And Print Vertex Positions)
+### Example (Iterate Over Faces And Print Vertex Positions)
 ```javascript
 let model = Objs.parseObj(RawOBJString);
 let vertices = model.vertices;
