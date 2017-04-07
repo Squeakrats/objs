@@ -2,8 +2,15 @@
  * @author Yusef Sohail
  */
 
+(function(root, factory) {
+    if(typeof module === "object" && module.exports) {
+        module.exports = factory();
+    } else {
+        root.Objs = factory();
+    }
+}(this, function() {
+
 var Objs = {};
-(()=>{
 
 /**
  * @class Structure for holding vertex data
@@ -179,4 +186,5 @@ Objs.parseObj = (stringText) => {
     return model;
 }
 
-})(Objs);
+return Objs
+}));
