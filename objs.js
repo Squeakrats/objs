@@ -35,14 +35,14 @@ class Vertex3 {
  * @param {Int} a First vertex
  * @param {Int} b Second vertex
  * @param {Int} c Third vertex
- * @param {Int} mi Material Index
+ * @param {Int} m Material Index
  */
 class Face3 {
-    constructor(a, b, c, mi=null) {
+    constructor(a, b, c, m=null) {
         this.a = a;
         this.b = b;
         this.c = c;
-        this.mi = mi;
+        this.m = m;
     }
 }
 

@@ -49,7 +49,7 @@ console.log(model);
        a  : // <first Vertex> * See above data structure. These are NOT the vertex positions
        b  : // <second Vertex>
        c  : // <third Vertex>
-       mi : // <material Index>
+       m : // <material Index>
 }
 ```
 
