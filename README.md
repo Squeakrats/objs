@@ -1,7 +1,7 @@
 # objs.js
 
 ## Description
-Simple obj file loader written in Javascript. Useful for loading files via ajax or parsing pre-loaded text. Should be compatible with every model [here]( http://people.sc.fsu.edu/~jburkardt/data/obj/obj.html). Please note that this library only supports a subset of the obj format. 
+Simple obj file loader written in Javascript. Useful for loading files via ajax or parsing pre-loaded text. Should be compatible with every model [here]( http://people.sc.fsu.edu/~jburkardt/data/obj/obj.html) (except the pyramid). Please note that this library only supports a subset of the obj format. 
 
 ## Previewing
 To see if the library supports your model head over [here] and upload it. It will let you see a preview and probably save you some debugging time. 
