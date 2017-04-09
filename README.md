@@ -25,7 +25,7 @@ let model = Objs.parseObj(RawOBJString);
 console.log(model);
 ```
 
-#### [TFWGF Loader]( http://people.sc.fsu.edu/~jburkardt/data/obj/obj.html)
+#### [TFWGF Loader]( https://github.com/Squeakrats/TFWGF )
 ```javascript
 let model = PreLoadedAssets["skyscraper.obj"]
 // Do things with skyscraper
